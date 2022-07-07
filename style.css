@@ -1,0 +1,444 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: white;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+body .main {
+  height: 100%;
+  padding: 2rem;
+}
+body .main .main__container {
+  display: grid;
+  grid-template-columns: minmax(28rem, 1fr) 4fr;
+  height: 100%;
+  background-color: #f8f8f8;
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: 0rem 1rem 2rem 1.5rem #ccc;
+}
+body .main .main__container .left__side {
+  border-right: 0.1rem solid black;
+  color: #bcbcbc;
+}
+body .main .main__container .left__side p, body .main .main__container .left__side span {
+  color: #504f4f;
+}
+body .main .main__container .left__side .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  padding: 0.5rem 1rem;
+  padding-left: 3rem;
+  gap: 1rem;
+}
+body .main .main__container .left__side .logo img {
+  width: 4rem;
+}
+body .main .main__container .left__side .logo span {
+  font-size: 2rem;
+}
+body .main .main__container .left__side .tab__container {
+  margin-top: 2rem;
+}
+body .main .main__container .left__side .tab__container .nav__list .nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  font-size: 2.2rem;
+  padding: 1.2rem 0;
+  padding-left: 3rem;
+  margin: 0.7rem 0;
+}
+body .main .main__container .left__side .tab__container .nav__list .nav p {
+  font-weight: 400;
+}
+body .main .main__container .left__side .tab__container .nav__list .nav::before {
+  font-size: 2rem;
+  width: 5rem;
+}
+body .main .main__container .left__side .tab__container .nav__list .home::before {
+  content: "\f015";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+body .main .main__container .left__side .tab__container .nav__list .recent::before {
+  content: "\f017";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+body .main .main__container .left__side .tab__container .nav__list .following::before {
+  content: "\e533";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+body .main .main__container .left__side .user__zone {
+  margin: 0.7rem 0;
+}
+body .main .main__container .left__side .user__zone .user__zone--title {
+  font-size: 2rem;
+  padding: 1.2rem 0;
+  padding-left: 3rem;
+}
+body .main .main__container .left__side .user__zone .user__zone--list .user__item {
+  font-size: 2.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  padding: 1.2rem 0;
+  padding-left: 3rem;
+  margin: 0.7rem 0;
+}
+body .main .main__container .left__side .user__zone .user__zone--list .user__item::before {
+  width: 5rem;
+  font-size: 2rem;
+}
+body .main .main__container .left__side .user__zone .user__zone--list .messages::before {
+  content: "\f27a";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 2rem;
+}
+body .main .main__container .left__side .user__zone .user__zone--list .notification::before {
+  content: "\f0f3";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 2rem;
+}
+body .main .main__container .left__side .user__zone .user__zone--list .notification .notification--counter {
+  position: absolute;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff773e;
+  color: white;
+  border-radius: 50%;
+}
+body .main .main__container .left__side .ads--notification {
+  padding: 0.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+body .main .main__container .left__side .ads--notification img {
+  height: 20rem;
+}
+body .main .main__container .left__side .ads--notification .ads__titel {
+  font-size: 2rem;
+  color: #1e7ede;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+body .main .main__container .left__side .ads--notification .ads__description {
+  font-size: 1.7rem;
+  color: #504f4f;
+  text-align: center;
+}
+body .main .main__container .left__side .user--logs {
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  margin-bottom: 2rem;
+}
+body .main .main__container .left__side .user--logs .user--logs__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+  padding: 0.5rem;
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0rem 0.4rem 1rem 0rem rgba(176, 176, 176, 0.76);
+  transition: all 0.3s ease-in;
+}
+body .main .main__container .left__side .user--logs .user--logs__container:hover {
+  box-shadow: 0rem 1rem 1rem 0rem rgba(128, 128, 128, 0.76);
+  cursor: pointer;
+}
+body .main .main__container .left__side .user--logs .user--logs__container::after {
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: 3rem;
+  color: black !important;
+  font-size: 2rem;
+}
+body .main .main__container .left__side .user--logs .user--logs__container .user--logs__image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+body .main .main__container .left__side .user--logs .user--logs__container .user--logs__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  justify-content: unset;
+  gap: 0.5rem;
+}
+body .main .main__container .left__side .user--logs .user--logs__container .user--logs__wrapper .user--logs__name span {
+  color: black !important;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+body .main .main__container .left__side .user--logs .user--logs__container .user--logs__wrapper .user--logs__lastseen span {
+  color: #bcbcbc !important;
+  font-size: 1.4rem;
+}
+body .main .main__container .right__side {
+  padding: 1rem 2rem;
+}
+body .main .main__container .right__side .right__side__container {
+  width: 100%;
+}
+body .main .main__container .right__side .right__side__container .right__side--header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--header .right__side--searchbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+  background-color: white;
+  padding-left: 2rem;
+  border-radius: 1rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--header .right__side--searchbar::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #504f4f;
+}
+body .main .main__container .right__side .right__side__container .right__side--header .right__side--searchbar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.5rem 2rem;
+  font-size: 1.8rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--header .search--tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--header .search--tools div {
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  font-size: 3rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--header .search--tools .search__arrange {
+  color: black;
+  background-color: white;
+}
+body .main .main__container .right__side .right__side__container .right__side--header .search--tools .search__add {
+  color: white;
+  background-color: black;
+}
+body .main .main__container .right__side .right__side__container .right__side--main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30rem);
+  grid-auto-rows: minmax(20rem, auto);
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: unset;
+  gap: 1.5rem;
+  background-color: rgb(243, 243, 243);
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  box-shadow: 0rem 0.4rem 1rem 0rem rgba(176, 176, 176, 0.76);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card:hover {
+  box-shadow: 0rem 1rem 1rem 0rem rgba(128, 128, 128, 0.76);
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .image {
+  width: 100%;
+  background-color: white;
+  height: 10rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .image::after {
+  content: "";
+  display: table;
+  clear: both;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .image:hover::after {
+  opacity: 1;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .image:hover .tools {
+  top: 1rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .image .tools {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  top: -100%;
+  right: 1rem;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .image .tools div {
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .image .tools div img {
+  width: 3rem;
+  height: 3rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .creator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  gap: 2rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .creator .profile {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .creator .user__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: unset;
+  gap: 0.5rem;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .creator .user__wrapper .user__name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+body .main .main__container .right__side .right__side__container .right__side--main .card .creator .user__wrapper .user__follower {
+  font-size: 1.6rem;
+  color: #504f4f;
+}
+
+.span1-row-end {
+  grid-row-end: span 1;
+}
+.span1-row-end .image {
+  height: 100% !important;
+}
+
+.span2-row-end {
+  grid-row-end: span 2;
+}
+.span2-row-end .image {
+  height: 100% !important;
+}
+
+.span3-row-end {
+  grid-row-end: span 3;
+}
+.span3-row-end .image {
+  height: 100% !important;
+}
+
+.span4-row-end {
+  grid-row-end: span 4;
+}
+.span4-row-end .image {
+  height: 100% !important;
+}
+
+.span5-row-end {
+  grid-row-end: span 5;
+}
+.span5-row-end .image {
+  height: 100% !important;
+}
+
+.activeTab {
+  color: black !important;
+  background-color: #f0f0f0 !important;
+}
+.activeTab::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  display: table;
+  clear: both;
+  height: 70%;
+  width: 0.4rem;
+  right: -0.2rem;
+  background-color: black;
+}
+.activeTab p, .activeTab span {
+  color: black !important;
+  font-weight: 600 !important;
+}/*# sourceMappingURL=style.css.map */

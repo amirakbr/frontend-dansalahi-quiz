@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintrest Redesign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="main__container">
+            <div class="left__side">
+                <div class="logo">
+                    <img src="/media/pintrest.png" alt="">
+                    <span>
+                        Pintrest
+                    </span>
+                </div>
+                <div class="tab__container">
+                    <ul class="nav__list">
+                        <li class="nav home activeTab">
+                            <p>
+                                Home
+                            </p>
+                        </li>
+                        <li class="nav recent">
+                            <p>
+                                Recent
+                            </p>
+                        </li>
+                        <li class="nav following">
+                            <p>
+                                Following
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user__zone">
+                    <div class="user__zone--title">
+                        <p>
+                            Insights
+                        </p>
+                    </div>
+                    <ul class="user__zone--list">
+                        <li class="user__item messages">
+                            <p>
+                                Messages
+                            </p>
+                        </li>
+                        <li class="user__item notification">
+                            <p>
+                                Notification
+                            </p>
+                            <span class="notification--counter">2</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ads--notification">
+                    <img src="/media/womanWorking.png" alt="">
+                    <p class="ads__titel">
+                        Unlock Business Tools
+                    </p>
+                    <p class="ads__description">
+                        Hurry Up ! Now you can unlock our new bussiness tools at your convineses
+                    </p>
+                </div>
+                <div class="user--logs">
+                    <div class="user--logs__container">
+                        <div class="user--logs__image">
+                            <img src="/media/avt-1.jpg" alt="">
+                        </div>
+                        <div class="user--logs__wrapper">
+                            <div class="user--logs__name"><span>
+                                Agh Amir
+                            </span></div>
+                            <div class="user--logs__lastseen"><span>
+                                Last Login: 10/08/20
+                            </span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right__side">
+                <div class="right__side__container">
+                    <div class="right__side--header">
+                        <div class="right__side--searchbar">
+                            <input type="search" placeholder="Search">
+                        </div>
+                        <div class="search--tools">
+                            <div class="search__arrange"><span>
+                                <i class="fas fa-sort"></i>
+                            </span></div>
+                            <div class="search__add"><span>
+                                <i class="fas fa-sort"></i>
+                            </span></div>
+                        </div>
+                    </div>
+                    <div class="right__side--main">
+                        <div class="card span2-row-end">
+                            <div class="image">
+                                <img src="/media/womanWorking.png" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/0.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card span3-row-end">
+                            <div class="image">
+                                <img src="/media/1.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="/media/2.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="/media/3.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="/media/4.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card span4-row-end">
+                            <div class="image">
+                                <img src="/media/5.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="/media/6.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="/media/7.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card span2-row-end">
+                            <div class="image">
+                                <img src="/media/8.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="/media/9.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="card">
+                            <div class="image">
+                                <img src="/media/10.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="/media/11.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="card">
+                            <div class="image">
+                                <img src="/media/12.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card span2-row-end">
+                            <div class="image">
+                                <img src="/media/1.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="/media/2.jpg" alt="">
+                                <div class="tools">
+                                    <div class="folder">
+                                        <img src="/media/icons8-folder-30(1).png" alt="">
+                                    </div>
+                                    <div class="thumbs">
+                                        <img src="/media/icons8-thumbs-up-30.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator">
+                                <div class="profile"><img src="/media/avt-1.jpg" alt=""></div>
+                                <div class="user__wrapper">
+                                    <div class="user__name">
+                                        <span>
+                                            Seyed
+                                        </span>
+                                    </div>
+                                    <div class="user__follower">
+                                        <span class="user__follower--counters">
+                                            373
+                                        </span>
+                                        <span>
+                                            Followers
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/app.js"></script>
+    
+</body>
+</html>
