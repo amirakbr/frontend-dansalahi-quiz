@@ -304,6 +304,7 @@ body .main .main__container .right__side .right__side__container .right__side--m
   box-shadow: 0rem 0.4rem 1rem 0rem rgba(176, 176, 176, 0.76);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  background-color: white;
 }
 body .main .main__container .right__side .right__side__container .right__side--main .card:hover {
   box-shadow: 0rem 1rem 1rem 0rem rgba(128, 128, 128, 0.76);
